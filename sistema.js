@@ -31,3 +31,4 @@ function dfs(grafo, inicio, destino) {
 
     return buscar(inicio, [inicio]);
 }
+module.exports = { Grafo, mapa, bfs, dfs };
