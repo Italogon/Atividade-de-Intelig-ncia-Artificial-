@@ -15,6 +15,15 @@ class Grafo {
 
         this.listaAdj[origem].push(destino);
     }
+
+    obterVizinhos(no) {
+        return this.listaAdj[no] || [];
+    }
+
+    imprimir() {
+        console.log("Lista de Adjacência:");
+        console.log(this.listaAdj);
+    }
 }
 
 module.exports = Grafo;
