@@ -1,7 +1,4 @@
-const grafo = new Grafo();
-
-grafo.adicionarAresta('A', 'B');
-grafo.adicionarAresta('A', 'C');
-grafo.adicionarAresta('B', 'D');
-grafo.adicionarAresta('C', 'D');
-
+function executarDFS() {
+    const resultado = dfs(grafo, 'A', 'D');
+    console.log("Resultado DFS:", resultado);
+}
