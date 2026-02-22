@@ -10,13 +10,15 @@ function dfs(grafo, inicio, destino) {
 
         for (let vizinho of grafo.listaAdj[no]) {
             if (!visitados.has(vizinho)) {
-                const resultado = buscar(vizinho, [...caminho, vizinho]);
+                const resultado = buscar(no = vizinho, [...caminho, vizinho]);
                 if (resultado) return resultado;
             }
         }
 
         return null;
     }
+
+    return buscar(inicio, [inicio]);
 }
 
 module.exports = { dfs };
