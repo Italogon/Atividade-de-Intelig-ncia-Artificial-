@@ -13,16 +13,9 @@ class Grafo {
         this.adicionarNo(origem);
         this.adicionarNo(destino);
 
+        
         this.listaAdj[origem].push(destino);
-    }
-
-    obterVizinhos(no) {
-        return this.listaAdj[no] || [];
-    }
-
-    imprimir() {
-        console.log("Lista de Adjacência:");
-        console.log(this.listaAdj);
+        this.listaAdj[destino].push(origem);
     }
 }
 
