@@ -13,7 +13,7 @@ function bfs(grafo, inicio, destino) {
         if (!visitados.has(no)) {
             visitados.add(no);
 
-            for (let vizinho of grafo[no]) {
+            for (let vizinho of grafo.listaAdj[no]) {
                 fila.push([...caminho, vizinho]);
             }
         }
